@@ -36,9 +36,6 @@
     <bean id="ukf.EntityDescriptorUKIdPopulationStage" abstract="true" parent="ukf.stage_parent"
         class="uk.org.ukfederation.mda.EntityDescriptorUKIdPopulationStage"/>
 
-    <bean id="ukf.IdPDisplayNameDuplicateDetectingStage" abstract="true" parent="ukf.stage_parent"
-        class="uk.org.ukfederation.mda.IdPDisplayNameDuplicateDetectingStage"/>
-
     <bean id="ukf.RegexFileFilter" abstract="true"
         class="uk.org.ukfederation.mda.RegexFileFilter"/>
 
@@ -74,6 +71,13 @@
 
     <bean id="ukf.EntityAttributeAddingStage" abstract="true" parent="ukf.stage_parent"
         class="uk.org.ukfederation.mda.dom.saml.mdattr.EntityAttributeAddingStage"/>
+
+    <!--
+        uk.org.ukfederation.mda.dom.saml.mdui
+    -->
+
+    <bean id="ukf.IdPDisplayNameDuplicateDetectingStage" abstract="true" parent="ukf.stage_parent"
+        class="uk.org.ukfederation.mda.dom.saml.mdui.IdPDisplayNameDuplicateDetectingStage"/>
 
     <!--
         uk.org.ukfederation.mda.statistics

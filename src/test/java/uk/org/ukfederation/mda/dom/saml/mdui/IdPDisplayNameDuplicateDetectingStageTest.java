@@ -1,4 +1,4 @@
-package uk.org.ukfederation.mda;
+package uk.org.ukfederation.mda.dom.saml.mdui;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,8 @@ import net.shibboleth.metadata.dom.DOMElementItem;
 import net.shibboleth.utilities.java.support.collection.ClassToInstanceMultiMap;
 import net.shibboleth.utilities.java.support.component.ComponentInitializationException;
 import net.shibboleth.utilities.java.support.xml.XMLParserException;
+import uk.org.ukfederation.mda.BaseDOMTest;
+import uk.org.ukfederation.mda.UKItemIdentificationStrategy;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
