@@ -1,9 +1,9 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven (JDK 11)
+name: Java CI with Maven (JDK 17)
 
-# Only 'this' branch will execute this action when pushed to or a PR is created, so the 'on' is not strictly required but are added as 
+# Only 'this' branch will execute this action when pushed to or a PR is created, so the 'on' is not strictly required but are added as
 # an extra layer of protection to ensure the correct Java version is run
 on:
   push:
@@ -18,11 +18,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 11
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
-        distribution: 'corretto'      
-        java-version: '11'
+        distribution: 'corretto'
+        java-version: '17'
         cache: 'maven'
     - name: Build with Maven
       run: mvn -B verify checkstyle:checkstyle --file pom.xml
